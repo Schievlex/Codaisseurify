@@ -2,12 +2,10 @@
 
 one:
   title: MyString
-  album: 1
-  release_year: MyString
-  integer: MyString
+  album: MyString
+  release_year: 1
 
 two:
   title: MyString
-  album: 1
-  release_year: MyString
-  integer: MyString
+  album: MyString
+  release_year: 1
