@@ -3,8 +3,6 @@
 <p>Album: <%= @song.album %> | Year of release: <%= @song.release_year %> </p>
 
 <hr>
-
+<%= link_to "[Edit]", edit_song_path(@song.id) %> | <%= link_to "[Delete]", song_path(@song.id), method: :delete, data: { confirm: "Are you sure?" } %>
 <hr>
-
-<%= link_to "[Edit]", edit_song_path(@song.id) %>
-<%= link_to "[Delete]", song_path(@song.id), method: :delete, data: { confirm: "Are you sure?" } %>
+<%= link_to "[Back]", request.referer.present? ? request.referer : default_path %>

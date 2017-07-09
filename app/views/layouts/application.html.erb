@@ -6,15 +6,21 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="jumbotron-narrow.css" rel="stylesheet">
   </head>
 
   <body>
-	    <%= yield %>
+  <div class="container">
+  <div class="header clearfix">
+        <nav>
+          
+        </nav>
+        <h3 class="text-muted"><%= link_to "Codaisseurify", root_path %></h3>
+      </div>
 
-	<br><br>
-	<hr>
-
-	<%= link_to "[All Artists]", root_path %>
-
+      <div class="jumbotron">
+        <p class="lead"><%= yield %></p>
+        
+      </div>
   </body>
 </html>
