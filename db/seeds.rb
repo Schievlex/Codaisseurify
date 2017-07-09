@@ -8,12 +8,12 @@
 Song.delete_all
 Artist.delete_all
 
-artist1 = Artist.create!( {name: "Queens of the Stone Age", image_url: "http://coochiecrunch.files.wordpress.com/2012/10/munk-one-queens-of-the-stone-age.jpg"} )
+artist1 = Artist.create!( {name: "Queens of the Stone Age", image_url: "http://res.cloudinary.com/daun7eksg/image/upload/v1499596065/munk-one-queens-of-the-stone-age_uzfln9.jpg"} )
 
-artist2 = Artist.create!( {name: "Foo Fighters", image_url: "https://ichef.bbci.co.uk/images/ic/960x540/p01br4cp.jpg"} )
+artist2 = Artist.create!( {name: "Foo Fighters", image_url: "http://res.cloudinary.com/daun7eksg/image/upload/v1499596065/foofighters_bkmk5p.jpg"} )
 
 
-artist3 = Artist.create!( {name: "Muse", image_url: "https://pbs.twimg.com/profile_images/793901137690783746/sdXDkkpz.jpg"} )
+artist3 = Artist.create!( {name: "Muse", image_url: "http://res.cloudinary.com/daun7eksg/image/upload/v1499596065/muse_zgbgpy.jpg"} )
 
 artists_count = Artist.all.length
 puts "#{artists_count} artists were created."
