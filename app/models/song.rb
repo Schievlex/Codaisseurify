@@ -5,4 +5,6 @@ class Song < ApplicationRecord
 	validates :release_year, presence: true, length: { is: 4}
 	validates :album, presence: true
 
+	
+
 end
