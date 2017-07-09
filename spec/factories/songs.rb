@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :song do
 
-    name              { Faker::Name.name }
+    title              { Faker::Name.name }
     album             { Faker::Overwatch.hero }
     release_year      { Faker::Number.number(4) }
 
