@@ -1,12 +1,27 @@
+<head>
+<style>
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.square {
+    height: 200px;
+    width: 200px;
+}
+
+</style>
+</head>
 <p id="notice"><%= notice %></p>
 
 <p>
   <strong>Name:</strong>
   <%= @artist.name %>
 </p>
-
+<div class="square">
 <%= image_tag @artist.image_url %>
-
+</div>
 <h4>List of Songs</h4>
 
 <% if @artist.songs.any? %>

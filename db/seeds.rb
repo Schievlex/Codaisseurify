@@ -10,7 +10,7 @@ Artist.delete_all
 
 artist1 = Artist.create!( {name: "Queens of the Stone Age", image_url: "http://res.cloudinary.com/daun7eksg/image/upload/v1499596065/munk-one-queens-of-the-stone-age_uzfln9.jpg"} )
 
-artist2 = Artist.create!( {name: "Foo Fighters", image_url: "http://res.cloudinary.com/daun7eksg/image/upload/v1499596065/foofighters_bkmk5p.jpg"} )
+artist2 = Artist.create!( {name: "Foo Fighters", image_url: "http://res.cloudinary.com/daun7eksg/image/upload/v1499685485/foofighterslogo_c5ihh3.png"} )
 
 
 artist3 = Artist.create!( {name: "Muse", image_url: "http://res.cloudinary.com/daun7eksg/image/upload/v1499596065/muse_zgbgpy.jpg"} )

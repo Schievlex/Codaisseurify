@@ -1,8 +1,31 @@
+<head>
+	<style>
+		img {
+    max-width: 100%;
+    max-height: 100%;
+	}
+
+	.square {
+	    height: 200px;
+	    width: 200px;
+	}
+
+	</style>
+</head>
+
+<div class="container" >
+
 <h1>List of Artists</h1>
 
-
+<!-- <div class='col-md-6'> -->
 <% @artists.each do |artist| %>
-  <p><%= link_to artist.name, artist_path(artist.id) %></p>
-
+ <div class="row">
+    <div class="col-sm-3" style="background-color:white;">
+  		<%= link_to artist.name, artist_path(artist.id) %>
+  		<div class='square'><%= image_tag artist.image_url %></div>
+  		</div>
+<!--  -->
 <% end %>
+<!-- </div> -->
+
 
